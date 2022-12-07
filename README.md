@@ -70,6 +70,7 @@ sudo dpkg -i thingsboard-3.3.3pe.deb
 
 **You might encounter this message below while installing thingsboard-3.3.3pe**
 ![enter image description here](screenshots/upgrade-msg.png)
+
 You can choose Y but it will replace old configuration with new configuration. So you need to backup your thingsboard.conf and thingsboard.yaml file.
 **Also you can find the old configuration files in this folder**
 
@@ -223,6 +224,7 @@ wget https://raw.githubusercontent.com/mahbubul-alam-sabuj/tesenso.io-upgrade-gu
 ```
 
 ![files inside files folder](screenshots/file-list.png)
+
 **Install unzip:**
 
 ```bash

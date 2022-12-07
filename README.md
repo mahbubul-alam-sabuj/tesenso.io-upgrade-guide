@@ -1,6 +1,6 @@
 # **Upgrading thingsboard from 3.3.1PE to 3.3.2PE**
 
-**Make a directory called tb-3.3.2PE and cd into it:**
+**Make a directory tb-3.3.2PE and cd into it:**
 
 ```bash
 mkdir tb-3.3.2PE && cd tb-3.3.2PE
@@ -44,7 +44,7 @@ Warning: The unit file, source configuration  file  or drop-ins of thingsboard.s
 
 # **Upgrading thingsboard from 3.3.2PE to 3.3.3PE**
 
-**Make a directory called tb-3.3.3PE and cd into it**
+**Make a directory tb-3.3.3PE and cd into it**
 
 ```bash
 cd .. && mkdir tb-3.3.3PE && cd tb-3.3.3PE
@@ -97,7 +97,7 @@ sudo service thingsboard start
 
 # **Upgrading thingsboard from 3.3.3PE to 3.3.4PE**
 
-**Make a directory called tb-3.3.4PE and cd into it**
+**Make a directory tb-3.3.4PE and cd into it**
 
 ```bash
 cd .. && mkdir tb-3.3.4PE && cd tb-3.3.4PE
@@ -135,7 +135,7 @@ sudo service thingsboard start
 
 # **Upgrading thingsboard from 3.3.4PE to 3.3.4.1PE**
 
-**Make a directory called tb-3.3.4.1PE and cd into it**
+**Make a directory tb-3.3.4.1PE and cd into it**
 
 ```bash
 cd .. && mkdir tb-3.3.4.1PE && cd tb-3.3.4.1PE
@@ -167,7 +167,7 @@ sudo service thingsboard start
 
 # **Upgrading thingsboard from version 3.3.4.1PE to 3.4PE**
 
-**Make a directory called tb-3.3.4.1PE and cd into it**
+**Make a directory called tb-3.4PE and cd into it**
 
 ```bash
 cd .. && mkdir tb-3.4PE && cd tb-3.4PE

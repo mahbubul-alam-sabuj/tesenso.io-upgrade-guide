@@ -111,7 +111,7 @@ nano thingsboard.conf
 sudo nano /usr/share/thingsboard/conf/thingsboard.conf
 ```
 
-after updating it save it by ctrl + 0 followed enter. and ctrl + x to close it.
+after updating it save it by ctrl + 0 followed by enter. and ctrl + x to close it.
 ***
 
 **Execute the upgrade script**

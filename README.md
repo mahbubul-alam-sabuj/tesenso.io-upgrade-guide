@@ -62,12 +62,6 @@ wget https://dist.thingsboard.io/thingsboard-3.3.3pe.deb
 sudo service thingsboard stop
 ```
 
-**Install the Debian Package**
-
-```bash
-sudo dpkg -i thingsboard-3.3.3pe.deb
-```
-
 **You might encounter this message below while installing thingsboard-3.3.3pe**
 ![enter image description here](screenshots/upgrade-msg.png)
 
@@ -82,6 +76,43 @@ You can choose Y but it will replace old configuration with new configuration. S
 /usr/share/thingsboard/conf/thingsboard.conf.dpkg-old
 /usr/share/thingsboard/conf/thingsboard.yml.dpkg-old
 ```
+
+**Copy old configuration files**
+
+```bash
+sudo cp /usr/share/thingsboard/conf/thingsboard.conf .
+```
+
+```bash
+sudo cp /usr/share/thingsboard/conf/thingsboard.yml .
+```
+
+```bash
+sudo cp /usr/share/thingsboard/conf/logback.xml .
+```
+
+**Install the Debian Package**
+
+```bash
+sudo dpkg -i thingsboard-3.3.3pe.deb
+```
+
+after the installation you need to update thingsboard.conf.
+
+**Copy previous configurations**
+
+```bash
+nano thingsboard.conf
+```
+
+**And paste into this file**
+
+```bash
+sudo nano /usr/share/thingsboard/conf/thingsboard.conf
+```
+
+after updating it save it by ctrl + 0 followed enter. and ctrl + x to close it.
+***
 
 **Execute the upgrade script**
 

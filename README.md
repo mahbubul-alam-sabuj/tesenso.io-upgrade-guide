@@ -62,7 +62,7 @@ wget https://dist.thingsboard.io/thingsboard-3.3.3pe.deb
 sudo service thingsboard stop
 ```
 
-**You might encounter this message below while installing thingsboard-3.3.3pe**
+**You might encounter this prompt below while installing thingsboard-3.3.3pe**
 ![enter image description here](screenshots/upgrade-msg.png)
 
 You can choose Y but it will replace old configuration with new configuration. So you need to backup your thingsboard.conf and thingsboard.yaml file.

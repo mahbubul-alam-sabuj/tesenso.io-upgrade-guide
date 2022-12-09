@@ -18,6 +18,20 @@ wget https://dist.thingsboard.io/thingsboard-3.3.2pe.deb
 sudo service thingsboard stop
 ```
 
+**Copy old configuration files**
+
+```bash
+sudo cp /usr/share/thingsboard/conf/thingsboard.conf .
+```
+
+```bash
+sudo cp /usr/share/thingsboard/conf/thingsboard.yml .
+```
+
+```bash
+sudo cp /usr/share/thingsboard/conf/logback.xml .
+```
+
 **Install thingsboard-3.3.2pe:**
 
 ```bash
@@ -112,7 +126,8 @@ sudo nano /usr/share/thingsboard/conf/thingsboard.conf
 ```
 
 after updating it save it by ctrl + 0 followed by enter. and ctrl + x to close it.
-***
+
+---
 
 **Execute the upgrade script**
 
@@ -144,6 +159,20 @@ wget https://dist.thingsboard.io/thingsboard-3.3.4pe.deb
 
 ```bash
 sudo service thingsboard stop
+```
+
+**Copy old configuration files**
+
+```bash
+sudo cp /usr/share/thingsboard/conf/thingsboard.conf .
+```
+
+```bash
+sudo cp /usr/share/thingsboard/conf/thingsboard.yml .
+```
+
+```bash
+sudo cp /usr/share/thingsboard/conf/logback.xml .
 ```
 
 **Install the Debian Package**
@@ -184,6 +213,20 @@ wget https://dist.thingsboard.io/thingsboard-3.3.4.1pe.deb
 sudo service thingsboard stop
 ```
 
+**Copy old configuration files**
+
+```bash
+sudo cp /usr/share/thingsboard/conf/thingsboard.conf .
+```
+
+```bash
+sudo cp /usr/share/thingsboard/conf/thingsboard.yml .
+```
+
+```bash
+sudo cp /usr/share/thingsboard/conf/logback.xml .
+```
+
 **Install the Debian Package**
 
 ```bash
@@ -214,6 +257,20 @@ wget https://dist.thingsboard.io/thingsboard-3.4pe.deb
 
 ```bash
 sudo service thingsboard stop
+```
+
+**Copy old configuration files**
+
+```bash
+sudo cp /usr/share/thingsboard/conf/thingsboard.conf .
+```
+
+```bash
+sudo cp /usr/share/thingsboard/conf/thingsboard.yml .
+```
+
+```bash
+sudo cp /usr/share/thingsboard/conf/logback.xml .
 ```
 
 **Install the Debian Package**

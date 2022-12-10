@@ -3,7 +3,7 @@
 > **Note**
 > If you make any changes to thingsboard.conf, thingsboard.yml, logback.xml file during the upgradation process, you might encounter the prompt below while installing thingsboard
 > ![enter image description here](screenshots/upgrade-msg.png) ![enter image description here](screenshots/upgrade-msg2.png)
-> Choose option Y because some extra configuration will be added to these files and also you need to update these files afterwards.
+> Choose option Y because some extra configuration will be added to these files and also you may need to update these files afterwards.
 
 **Make a directory tb-3.3.2PE and cd into it:**
 

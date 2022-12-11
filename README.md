@@ -23,6 +23,12 @@ wget https://dist.thingsboard.io/thingsboard-3.3.2pe.deb
 sudo service thingsboard stop
 ```
 
+**Make a backup of your database**
+
+```bash
+sudo -Hiu postgres pg_dump thingsboard > thingsboard.sql.bak
+```
+
 **Copy old configuration files**
 
 ```bash

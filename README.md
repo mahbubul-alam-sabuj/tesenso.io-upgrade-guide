@@ -17,12 +17,6 @@ mkdir tb-3.3.2PE && cd tb-3.3.2PE
 wget https://dist.thingsboard.io/thingsboard-3.3.2pe.deb
 ```
 
-**Stop Thingsboard service:**
-
-```bash
-sudo service thingsboard stop
-```
-
 **Make a backup of your database**
 
 ```bash
@@ -33,6 +27,12 @@ sudo -Hiu postgres pg_dump thingsboard > thingsboard.sql.bak
 
 ```bash
 sudo cp /usr/share/thingsboard/conf/thingsboard.conf /usr/share/thingsboard/conf/thingsboard.yml /usr/share/thingsboard/conf/logback.xml .
+```
+
+**Stop Thingsboard service:**
+
+```bash
+sudo service thingsboard stop
 ```
 
 **Install thingsboard-3.3.2pe:**
@@ -87,12 +87,6 @@ cd .. && mkdir tb-3.3.3PE && cd tb-3.3.3PE
 wget https://dist.thingsboard.io/thingsboard-3.3.3pe.deb
 ```
 
-**Stop Thingsboard service:**
-
-```bash
-sudo service thingsboard stop
-```
-
 **You might encounter this prompt below while installing thingsboard-3.3.3pe**
 ![enter image description here](screenshots/upgrade-msg.png)
 
@@ -112,6 +106,12 @@ You can choose Y but it will replace old configuration with new configuration. S
 
 ```bash
 sudo cp /usr/share/thingsboard/conf/thingsboard.conf /usr/share/thingsboard/conf/thingsboard.yml /usr/share/thingsboard/conf/logback.xml .
+```
+
+**Stop Thingsboard service:**
+
+```bash
+sudo service thingsboard stop
 ```
 
 **Install the Debian Package**
@@ -162,16 +162,16 @@ cd .. && mkdir tb-3.3.4PE && cd tb-3.3.4PE
 wget https://dist.thingsboard.io/thingsboard-3.3.4pe.deb
 ```
 
-**Stop Thingsboard service**
-
-```bash
-sudo service thingsboard stop
-```
-
 **Copy old configuration files**
 
 ```bash
 sudo cp /usr/share/thingsboard/conf/thingsboard.conf /usr/share/thingsboard/conf/thingsboard.yml /usr/share/thingsboard/conf/logback.xml .
+```
+
+**Stop Thingsboard service**
+
+```bash
+sudo service thingsboard stop
 ```
 
 **Install the Debian Package**
@@ -220,16 +220,16 @@ cd .. && mkdir tb-3.3.4.1PE && cd tb-3.3.4.1PE
 wget https://dist.thingsboard.io/thingsboard-3.3.4.1pe.deb
 ```
 
-**Stop Thingsboard service**
-
-```bash
-sudo service thingsboard stop
-```
-
 **Copy old configuration files**
 
 ```bash
 sudo cp /usr/share/thingsboard/conf/thingsboard.conf /usr/share/thingsboard/conf/thingsboard.yml /usr/share/thingsboard/conf/logback.xml .
+```
+
+**Stop Thingsboard service**
+
+```bash
+sudo service thingsboard stop
 ```
 
 **Install the Debian Package**
@@ -272,16 +272,16 @@ cd .. && mkdir tb-3.4PE && cd tb-3.4PE
 wget https://dist.thingsboard.io/thingsboard-3.4pe.deb
 ```
 
-**Stop Thingsboard service**
-
-```bash
-sudo service thingsboard stop
-```
-
 **Copy old configuration files**
 
 ```bash
 sudo cp /usr/share/thingsboard/conf/thingsboard.conf /usr/share/thingsboard/conf/thingsboard.yml /usr/share/thingsboard/conf/logback.xml .
+```
+
+**Stop Thingsboard service**
+
+```bash
+sudo service thingsboard stop
 ```
 
 **Install the Debian Package**

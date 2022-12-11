@@ -41,7 +41,8 @@ sudo service thingsboard stop
 sudo dpkg -i thingsboard-3.3.2pe.deb
 ```
 
-**You may need to update thingsboard.yml, thingsboard.conf and logback.xml file**
+> **Note**
+> **You may need to update thingsboard.yml, thingsboard.conf and logback.xml file**
 
 ```bash
 sudo nano /usr/share/thingsboard/conf/thingsboard.conf

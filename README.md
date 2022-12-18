@@ -41,8 +41,7 @@ sudo service thingsboard stop
 sudo dpkg -i thingsboard-3.3.2pe.deb
 ```
 
-> **Note**
-> **You may need to update thingsboard.yml, thingsboard.conf and logback.xml file**
+> **Note** > **You may need to update thingsboard.yml, thingsboard.conf and logback.xml file**
 
 ```bash
 sudo nano /usr/share/thingsboard/conf/thingsboard.conf
@@ -73,7 +72,52 @@ sudo service thingsboard start
 ```bash
 Warning: The unit file, source configuration  file  or drop-ins of thingsboard.service changed on disk. Run 'systemctl daemon-reload' to reload units.
 ```
+
 **Install WebReport component:**
+
+Download tb-web-report debian package:
+
+```bash
+wget https://dist.thingsboard.io/tb-web-report-3.3.2pe.deb
+```
+
+Install third-party libraries:
+
+```bash
+sudo apt install -yq gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 \
+     libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 \
+     libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 \
+     libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 \
+     ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils unzip wget libgbm-dev
+```
+
+Install Roboto fonts:
+
+```bash
+sudo apt install fonts-roboto
+```
+
+Install Noto fonts (Japanese, Chinese, etc.):
+
+```bash
+mkdir ~/noto
+cd ~/noto
+wget https://noto-website.storage.googleapis.com/pkgs/NotoSansCJKjp-hinted.zip
+unzip NotoSansCJKjp-hinted.zip
+sudo mkdir -p /usr/share/fonts/noto
+sudo cp *.otf /usr/share/fonts/noto
+sudo chmod 655 -R /usr/share/fonts/noto/
+sudo fc-cache -fv
+cd ..
+rm -rf ~/noto
+```
+
+Install and start Web Report service:
+
+```bash
+sudo dpkg -i tb-web-report-3.3.2pe.deb
+sudo service tb-web-report start
+```
 
 # **Upgrading thingsboard from 3.3.2PE to 3.3.3PE**
 
@@ -150,6 +194,21 @@ sudo /usr/share/thingsboard/bin/install/upgrade.sh --fromVersion=3.3.2
 sudo service thingsboard start
 ```
 
+**Install WebReport component:**
+
+Download tb-web-report debian package:
+
+```bash
+wget https://dist.thingsboard.io/tb-web-report-3.3.3pe.deb
+```
+
+Install and start Web Report service:
+
+```bash
+sudo dpkg -i tb-web-report-3.3.3pe.deb
+sudo service tb-web-report start
+```
+
 # **Upgrading thingsboard from 3.3.3PE to 3.3.4PE**
 
 **Make a directory tb-3.3.4PE and cd into it**
@@ -208,6 +267,21 @@ sudo /usr/share/thingsboard/bin/install/upgrade.sh --fromVersion=3.3.3
 sudo service thingsboard start
 ```
 
+**Install WebReport component:**
+
+Download tb-web-report debian package:
+
+```bash
+wget https://dist.thingsboard.io/tb-web-report-3.3.4pe.deb
+```
+
+Install and start Web Report service:
+
+```bash
+sudo dpkg -i tb-web-report-3.3.4pe.deb
+sudo service tb-web-report start
+```
+
 # **Upgrading thingsboard from 3.3.4PE to 3.3.4.1PE**
 
 **Make a directory tb-3.3.4.1PE and cd into it**
@@ -258,6 +332,21 @@ sudo nano /usr/share/thingsboard/conf/logback.xml
 
 ```bash
 sudo service thingsboard start
+```
+
+**Install WebReport component:**
+
+Download tb-web-report debian package:
+
+```bash
+wget https://dist.thingsboard.io/tb-web-report-3.3.4.1pe.deb
+```
+
+Install and start Web Report service:
+
+```bash
+sudo dpkg -i tb-web-report-3.3.4.1pe.deb
+sudo service tb-web-report start
 ```
 
 # **Upgrading thingsboard from version 3.3.4.1PE to 3.4PE**
@@ -318,6 +407,21 @@ sudo /usr/share/thingsboard/bin/install/upgrade.sh --fromVersion=3.3.4
 sudo service thingsboard start
 ```
 
+**Install WebReport component:**
+
+Download tb-web-report debian package:
+
+```bash
+wget https://dist.thingsboard.io/tb-web-report-3.4pe.deb
+```
+
+Install and start Web Report service:
+
+```bash
+sudo dpkg -i tb-web-report-3.4pe.deb
+sudo service tb-web-report start
+```
+
 # **Upgrading thingsboard from version 3.4PE to 3.4.1PE**
 
 **Make a directory called tb-3.4.1PE and cd into it**
@@ -376,6 +480,21 @@ sudo /usr/share/thingsboard/bin/install/upgrade.sh --fromVersion=3.4.0
 sudo service thingsboard start
 ```
 
+**Install WebReport component:**
+
+Download tb-web-report debian package:
+
+```bash
+wget https://dist.thingsboard.io/tb-web-report-3.4.1pe.deb
+```
+
+Install and start Web Report service:
+
+```bash
+sudo dpkg -i tb-web-report-3.4.1pe.deb
+sudo service tb-web-report start
+```
+
 # **Upgrading thingsboard from version 3.4.1PE to 3.4.2PE**
 
 **Make a directory called tb-3.4.2PE and cd into it**
@@ -432,6 +551,21 @@ sudo /usr/share/thingsboard/bin/install/upgrade.sh --fromVersion=3.4.1
 
 ```bash
 sudo service thingsboard start
+```
+
+**Install WebReport component:**
+
+Download tb-web-report debian package:
+
+```bash
+wget https://dist.thingsboard.io/tb-web-report-3.4.2pe.deb
+```
+
+Install and start Web Report service:
+
+```bash
+sudo dpkg -i tb-web-report-3.4.2pe.deb
+sudo service tb-web-report start
 ```
 
 # Additional Logging

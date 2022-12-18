@@ -325,7 +325,7 @@ sudo service thingsboard start
 cd .. && mkdir tb-3.4.1PE && cd tb-3.4.1PE
 ```
 
-**Download Thingsboard 3.4PE Debian package:**
+**Download Thingsboard 3.4.1PE Debian package:**
 
 ```bash
 wget https://dist.thingsboard.io/thingsboard-3.4.1pe.deb

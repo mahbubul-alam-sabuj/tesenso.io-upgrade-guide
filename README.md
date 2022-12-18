@@ -73,6 +73,7 @@ sudo service thingsboard start
 ```bash
 Warning: The unit file, source configuration  file  or drop-ins of thingsboard.service changed on disk. Run 'systemctl daemon-reload' to reload units.
 ```
+**Install WebReport component:**
 
 # **Upgrading thingsboard from 3.3.2PE to 3.3.3PE**
 

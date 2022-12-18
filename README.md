@@ -317,6 +317,122 @@ sudo /usr/share/thingsboard/bin/install/upgrade.sh --fromVersion=3.3.4
 sudo service thingsboard start
 ```
 
+# **Upgrading thingsboard from version 3.4PE to 3.4.1PE**
+
+**Make a directory called tb-3.4.1PE and cd into it**
+
+```bash
+cd .. && mkdir tb-3.4.1PE && cd tb-3.4.1PE
+```
+
+**Download Thingsboard 3.4PE Debian package:**
+
+```bash
+wget https://dist.thingsboard.io/thingsboard-3.4.1pe.deb
+```
+
+**Copy old configuration files**
+
+```bash
+sudo cp /usr/share/thingsboard/conf/thingsboard.conf /usr/share/thingsboard/conf/thingsboard.yml /usr/share/thingsboard/conf/logback.xml .
+```
+
+**Stop Thingsboard service**
+
+```bash
+sudo service thingsboard stop
+```
+
+**Install the Debian Package**
+
+```bash
+sudo dpkg -i thingsboard-3.4.1pe.deb
+```
+
+**You may need to update thingsboard.yml, thingsboard.conf and logback.xml file**
+
+```bash
+sudo nano /usr/share/thingsboard/conf/thingsboard.conf
+```
+
+```bash
+sudo nano /usr/share/thingsboard/conf/thingsboard.yml
+```
+
+```bash
+sudo nano /usr/share/thingsboard/conf/logback.xml
+```
+
+**Execute the upgrade script**
+
+```bash
+sudo /usr/share/thingsboard/bin/install/upgrade.sh --fromVersion=3.4.0
+```
+
+**Start thingsboard service**
+
+```bash
+sudo service thingsboard start
+```
+
+# **Upgrading thingsboard from version 3.4.1PE to 3.4.2PE**
+
+**Make a directory called tb-3.4.2PE and cd into it**
+
+```bash
+cd .. && mkdir tb-3.4.2PE && cd tb-3.4.2PE
+```
+
+**Download Thingsboard 3.4.2PE Debian package:**
+
+```bash
+wget https://dist.thingsboard.io/thingsboard-3.4.2pe.deb
+```
+
+**Copy old configuration files**
+
+```bash
+sudo cp /usr/share/thingsboard/conf/thingsboard.conf /usr/share/thingsboard/conf/thingsboard.yml /usr/share/thingsboard/conf/logback.xml .
+```
+
+**Stop Thingsboard service**
+
+```bash
+sudo service thingsboard stop
+```
+
+**Install the Debian Package**
+
+```bash
+sudo dpkg -i thingsboard-3.4.2pe.deb
+```
+
+**You may need to update thingsboard.yml, thingsboard.conf and logback.xml file**
+
+```bash
+sudo nano /usr/share/thingsboard/conf/thingsboard.conf
+```
+
+```bash
+sudo nano /usr/share/thingsboard/conf/thingsboard.yml
+```
+
+```bash
+sudo nano /usr/share/thingsboard/conf/logback.xml
+```
+
+**Execute the upgrade script**
+
+```bash
+sudo /usr/share/thingsboard/bin/install/upgrade.sh --fromVersion=3.4.1
+```
+
+**Start thingsboard service**
+
+```bash
+sudo service thingsboard start
+```
+
 # Additional Logging
 
 **To see thingsboard logs in realtime**
